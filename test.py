@@ -2,7 +2,7 @@ import cbapi
 
 def test_cbapi():
   try:
-    cbapi.set_rapidapi_key('e4278c7177msh6cfd99955256eccp1a4ed0jsn2953832534cb')
+    cbapi.set_rapidapi_key('YOUR_RAPIDAPI_KEY')
     df_ppl = cbapi.get_people(name='Steve',types='investor', parallel=True)
     df_org = cbapi.get_organizations(name='Data', parallel=True)
   except Exception:
